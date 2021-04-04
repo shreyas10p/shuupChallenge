@@ -1,0 +1,45 @@
+/* spacing */
+
+table {
+    table-layout: fixed;
+    width: 100%;
+    border-collapse: collapse;
+    border: 3px solid black;
+  }
+  
+  thead th:nth-child(1) {
+    width: 35%;
+  }
+  
+  thead th:nth-child(2) {
+    width: 35%;
+  }
+  
+  thead th:nth-child(3) {
+    width: 15%;
+  }
+  
+  thead th:nth-child(4) {
+    width: 15%;
+  }
+  tr {
+    border-collapse:collapse;
+}
+th, td {
+    padding: 20px;
+    border-right: solid 2px black; 
+    border-left: solid 2px black;
+    border-collapse:collapse;
+}
+
+.hCollapsed::before {
+    content: "+ ";
+  }
+  
+.hExpanded::before {
+    content: "- ";
+  }
+
+  #primary-row {
+    cursor: pointer;
+  }
